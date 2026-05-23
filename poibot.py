@@ -32,7 +32,6 @@ def duckduck(query):
           return None     
 
 # Initializing the llm model here used grok 
-print(grok_llm_key,googlemapsKey,google_api_key)
 llm = OpenAI(
     api_key=grok_llm_key,
     base_url="https://api.x.ai/v1"
@@ -104,5 +103,3 @@ def poidetails(query):
     poi["geocode"] = geocode_data
 
     return poi
-
-print(poidetails("Mt Cheeseman Ski Area Mount Cheeseman Ski Field Road, Mount Cheeseman, Castle Hill 7580, New Zealand"))
